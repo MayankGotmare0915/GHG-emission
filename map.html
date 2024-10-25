@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CypherX - Methane and Carbon Monoxide Map</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>CypherX</h1>
+            <p>Interactive Map for Methane and Carbon Monoxide Levels Over India</p>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <div class="container">
+            <div class="map-container">
+                <iframe src="{{ url_for('static', filename='map.html') }}" width="100%" height="600" frameborder="0"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Developed by CypherX Team | &copy; 2024</p>
+    </footer>
+</body>
+</html>
